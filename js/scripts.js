@@ -35,6 +35,7 @@ function convertGramToOunce(gramNum) {
   return (gramNum / 28.3495);
 }
 
+// interface logic
 /** Runs conversion to gram and places value in gram field */
 function executeConversionToGram() {
   const pounds = parseFloat(document.getElementById("pound-field").value);
