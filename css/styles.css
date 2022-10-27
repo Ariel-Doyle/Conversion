@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+  font-size: 21;
+}
+
+.body-container {
+  width: calc(60% + 320px);
+  box-sizing: border-box;
+  margin: auto;
+  overflow: hidden;
+  top: 30px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 600px;
+}
+
+.shaded {
+  background-color: #f0f0f0;
+}
+
+.centered {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+}
+
+.column-narrow-l {
+  width: 30%;
+  float: left;
+  padding-left: 8%;
+  text-align: justify;
+  line-height: 130%;
+}
+
+.column-narrow-r {
+  width: 30%;
+  float: right;
+  padding-right: 8%;
+  text-align: right;
+  line-height: 130%;
+}
+
+.column-narrow-r label {
+  float: right;
+  clear: both;
+}
+
+label, input {
+  position: relative;
+  display: block;
+  padding-right: 30px;
+  width: 120px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+label::after {
+  content: attr(unit);
+  position:absolute;
+  top: 2px;
+  left: 96px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  display: block;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
+button {
+  display: inline-block;
+  width: 24%;
+  margin: 0 auto;
+}

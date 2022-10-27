@@ -6,11 +6,24 @@
   <title>Conversion</title>
 </head>
 <body>
-  <h1>Conversion</h1>
-  <input type="number" id="pound-field" value="0">Pounds <input type="number" id="gram-field" value="0">Grams<br>
-  <input type="number" id="ounce-field" value="0">Ounces<br>
-  <button id="convert-to-gram" onClick="executeConversionToGram()">Convert to Grams</button>
-  <button id="convert-to-ounce" onClick="executeConversionToPound()">Convert to Pounds</button>
-  <button id="clear-all" onClick="clearAll()">Clear</button>
+  <h1 class="centered">Conversion</h1>
+  <div class="body-container shaded">
+    <div class="column-narrow-l">
+      <label unit="lb">
+        <input type="number" id="pound-field" value="0">
+      </label><br>
+      <label unit="oz">
+        <input type="number" id="ounce-field" value="0">
+      </label><br>
+    </div> <!-- end column-narrow-l -->
+    <div class="column-narrow-r">
+      <label unit="g">
+        <input type="number" id="gram-field" value="0">
+      </label><br>
+    </div> <!-- end column-narrow-r -->
+    <button id="convert-to-gram" onClick="executeConversionToGram()">----></button><br>
+    <button id="convert-to-ounce" onClick="executeConversionToPound()"><----</button><br>
+    <button id="clear-all" onClick="clearAll()">Clear</button>
+  </div> <!-- end body-container -->
 </body>
 </html>
