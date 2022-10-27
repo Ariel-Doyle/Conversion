@@ -9,4 +9,6 @@ function convertOunceToGram(ounceNum) {
 
 //interface logic
 
-let poundNum = parseInt(window.prompt("Enter how many pounds:"))
+let poundNum = parseInt(window.prompt("Enter how many pounds:"));
+
+let ounceNum = parseInt(window.prompt("Enter how many ounces:"));
